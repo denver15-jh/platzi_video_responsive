@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de platzi video, videos">
+    <meta name="keywords" content="Platzi, video, música, ">
+    <meta name="author" content="José Hernández" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/logo-platzi-video.png"/>
+    <title>Login</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- HEADER - LOGO -->
+    <header class="header-publico">
+        <!-- LOGO -->
+        <figure class="header-publico__container-logo">
+            <img class="header-publico__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video">
+        </figure>  
+    </header>
+    <!-- MAIN - FORMULARIO - IMAGEN -->
+    <main class="container-formulario-imagen">
+        <!-- TITULO - FORMULARIO - SOCIAL - REGISTRO -->
+        <section class="container-formulario-imagen__formulario">
+            <!-- TITULO -->
+            <section class="container-formulario-imagen__container-titulo-login">
+                <h2 class="container-formulario-imagen__titulo-login">Inicia sesión</h2>
+            </section>
+            <!-- FORMULARIO -->
+            <section class="container-formulario-imagen__container-formulario-login">
+                <form class="container-formulario-imagen__formulario-login" action="#">
+                    <!-- INPUTS -->
+                    <input class="container-formulario-imagen__input-email" type="email" placeholder="Correo Electronico" required>
+                    <input class="container-formulario-imagen__input-psssword" type="password" placeholder="Contraseña" required>
+                    <!-- BOTON -->
+                    <button class="container-formulario-imagen__boton"> Iniciar sesión </button>
+                    <!-- RECUERDAME - OLVIDE CONTRASEÑA -->
+                    <div class="container-formulario-imagen__container-recuerdame-forgot-password">
+                        <label class="container-formulario-imagen__container-recuerdame"  for="">
+                            <input class="container-formulario-imagen__input-recuerdame" type="checkbox" name="" id="" value=""> Recuérdame
+                        </label>
+                        <a class="container-formulario-imagen__forgot-password" href="#"> Olvidé mi contraseña </a>
+                    </div>
+                </form>
+            </section>
+            <!-- SOCIAL -->
+            <section class="container-formulario-imagen__container-google-twitter">
+                <!-- GOOGLE -->
+                <a class="container-formulario-imagen__redirect-google" href="#">
+                    <div class="container-formulario-imagen__container-google">
+                        <img class="container-formulario-imagen__imagen-google" src="assets/img/google-icon.png" alt="Google" title="Google" height="32" width="32">
+                        <p class="container-formulario-imagen__titulo-google"> Inicia sesión con Google </p>
+                    </div>
+                </a>
+                <!-- TWITTER -->
+                <a class="container-formulario-imagen__redirect-twitter" href="#">
+                    <div class="container-formulario-imagen__container-twitter">
+                        <img class="container-formulario-imagen__imagen-twitter" src="assets/img/twitter-icon.png" alt="Twitter" title="Google" height="32" width="32">
+                        <p class="container-formulario-imagen__titulo-twitter"> Inicia sesión con Twitter </p>
+                    </div>
+                </a>
+            </section>
+            <!-- REGISTRO -->
+            <section class="container-formulario-imagen__container-link-registate">
+                <p class="container-formulario-imagen__texto-link-registrate"> No tienes ninguna cuenta 
+                    <a class="container-formulario-imagen__link-registarte" href="#">Regístrate</a>
+                </p>
+            </section>
+        </section>
+        <!-- IMAGEN LOGIN -->
+        <section class="container-formulario-imagen__imagen">
+            <figure class="container-formulario-imagen__container-imagen-login">
+                <img class="container-formulario-imagen__imagen-login" src="assets/img/imagen-login.png" alt="Imágen principal login" title="Imágen principal login">
+            </figure>
+        </section>
+
+    </main>
+    <!-- FOOTER - LINKS -->
+    <footer class="footer">
+        <!-- LINKS -->
+        <a class="footer__link-terminos" href="#">Términos de uso</a>
+        <a class="footer__link-privacidad" href="#">Declaración de privacidad</a>
+        <a class="footer__link-ayuda" href="#">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
