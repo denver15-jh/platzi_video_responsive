@@ -1,0 +1,39 @@
+/* MEDIA QUERIES */
+
+/* mobile */
+
+@media(min-width: 480px){
+
+
+    /* formulario */
+
+    .container-formulario-imagen__formulario{
+        padding: 3rem 5rem;
+    }
+
+    /* recuerdame y olvido contraseña */
+
+    .container-formulario-imagen__container-recuerdame-forgot-password{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .container-formulario-imagen__container-recuerdame{
+        margin-bottom: 0;
+    }
+
+}
+
+@media(min-width: 575px){
+
+    /* formulario */
+
+    .container-formulario-imagen__formulario{
+        width: 50rem;
+    }
+    
+    .container-formulario-imagen__container-titulo-login, .container-formulario-imagen__container-formulario-login, .container-formulario-imagen__container-google-twitter, .container-formulario-imagen__container-link-registate{
+        width: 40rem;
+    }
+
+}

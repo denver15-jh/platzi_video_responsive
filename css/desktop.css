@@ -1,30 +1,17 @@
 /* MEDIA QUERIES */
 
-/* tablet */
+/* desktop */
 
-@media(min-width: 1024px){
-
-    /* formulario - imagen */
-
-    .container-formulario-imagen{
-        flex-direction: row;
-    }
+@media(min-width: 1200px){
 
     /* formulario */
 
     .container-formulario-imagen__formulario{
-        margin-right: 1.5rem;
-        width: 45rem;
+        width: 50rem;
     }
-
+    
     .container-formulario-imagen__container-titulo-login, .container-formulario-imagen__container-formulario-login, .container-formulario-imagen__container-google-twitter, .container-formulario-imagen__container-link-registate{
-        width: 35rem;
-    }
-
-    /* imagen */
-
-    .container-formulario-imagen__imagen{
-        display: block;
+        width: 40rem;
     }
 
 }

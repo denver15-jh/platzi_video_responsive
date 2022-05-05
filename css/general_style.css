@@ -1,0 +1,272 @@
+:root{
+    /* FUENTES */
+
+	--font-general: Arial, Helvetica, sans-serif;;
+
+    /* COLORES */
+
+    --color-purple: #AB88FF;
+    --color-water-green: #21c08b;
+    --color-gradient-water-green-purple: linear-gradient(#21C08B, #AB88FF);
+    --white-standar: white;
+    --black-opacity-uno: rgba(255, 255, 255, 0.1);
+    --color-transparent: transparent;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem ;
+    font-family: var(--font-general);
+}
+
+/* 1.- HEADER - PUBLICO */
+
+.header-publico{
+    background: var(--color-water-green);
+    padding: 2rem;
+}
+
+/* Logo */ 
+
+.header-publico__container-logo{
+    display: flex;
+    align-items: center;
+}
+
+/* 2.- MAIN  */
+
+.main-container-principal{
+    flex: 1 0 auto;
+}
+
+/* formulario - imagen */
+
+.container-formulario-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background: var(--color-gradient-water-green-purple);
+    padding: 2rem;
+}
+
+/* formulario */
+
+.container-formulario-imagen__formulario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70rem;
+    width: 100%;
+    padding: 3rem;
+    border: 0.2rem solid var(--white-standar);
+    border-radius: 4rem;
+    margin-right: 0rem;
+    /*margin-bottom: 1.5rem;*/
+}
+
+/* titulo formulario */
+
+.container-formulario-imagen__titulo-login{
+    font-size: 2.5rem;
+    color: var(--white-standar);
+}
+
+/* formulario */ 
+
+.container-formulario-imagen__container-titulo-login, .container-formulario-imagen__container-formulario-login, .container-formulario-imagen__container-google-twitter, .container-formulario-imagen__container-link-registate{
+    width: 100%;
+}
+
+.container-formulario-imagen__formulario-login{
+    display: flex;
+    flex-direction: column;
+}
+
+/* inputs */ 
+
+.container-formulario-imagen__input-email, .container-formulario-imagen__input-psssword{
+    background-color: var(--color-transparent);
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0.2rem solid var(--white-standar);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    outline: none;
+    height: 5rem;
+    color: var(--white-standar);
+}
+
+.container-formulario-imagen__input-email::placeholder, .container-formulario-imagen__input-psssword::placeholder{
+    color: var(--white-standar);
+}
+
+/* boton */ 
+
+.container-formulario-imagen__boton{
+    background-color: var(--black-opacity-uno);
+    border: none;
+    border-radius: 2.5rem;
+    color: var(--white-standar);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 5rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0;
+}
+
+/* recuerdame y olvido contraseña */
+
+.container-formulario-imagen__container-recuerdame-forgot-password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container-formulario-imagen__container-recuerdame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-standar);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.container-formulario-imagen__input-recuerdame{
+    margin-right: 0.5rem;
+}
+
+.container-formulario-imagen__forgot-password{
+    color: var(--white-standar);
+    font-size: 1.5rem; 
+    text-decoration: none;
+}
+
+.container-formulario-imagen__forgot-password:hover{
+    text-decoration: underline;
+}
+
+/* social */
+
+.container-formulario-imagen__container-google, .container-formulario-imagen__container-twitter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    font-size: 1.5rem; 
+    border: 0.2rem solid var(--white-standar);
+    border-radius: 5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.container-formulario-imagen__redirect-google, .container-formulario-imagen__redirect-twitter{
+    text-decoration: none;
+}
+
+.container-formulario-imagen__imagen-google, .container-formulario-imagen__imagen-twitter{
+    width: 3.2rem;
+}
+
+.container-formulario-imagen__titulo-google, .container-formulario-imagen__titulo-twitter{
+    margin-left: 0rem;
+    color: var(--white-standar);
+    text-align: center;
+}
+
+/* link registrate */
+
+.container-formulario-imagen__container-link-registate{
+    display: flex;
+    justify-content: center;
+    color: var(--white-standar);
+    text-align: center;
+}
+
+.container-formulario-imagen__texto-link-registrate{
+    font-size: 1.5rem;
+}
+
+.container-formulario-imagen__link-registarte{
+    text-decoration: none; 
+    color: var(--white-standar);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.container-formulario-imagen__link-registarte:hover{
+    text-decoration: underline;
+}
+
+/* imagen */
+
+.container-formulario-imagen__imagen{
+    display: none;
+    width: 100%;
+}
+
+.container-formulario-imagen__imagen-login{
+    height: 70rem;
+    width: 100%;
+    border-radius: 4rem;
+    object-fit: cover;
+    object-position: center; 
+}
+
+
+/* 3.- FOOTER */
+
+.footer{
+    flex-shrink: 0;
+    background-color: var(--color-purple);
+}
+
+/* ul links */
+
+.footer__container-ul-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem;
+}
+
+/* li links */
+
+.footer__container-li-link-terminos, .footer__container-li-link-privacidad, .footer__container-li-llink-ayuda{
+    padding: 1.6rem;
+}
+
+/* links */
+
+.footer__link-terminos, .footer__link-privacidad, .footer__link-ayuda{
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    color: var(--black-strong);
+}
+.footer__link-terminos:hover, .footer__link-privacidad:hover, .footer__link-ayuda:hover{
+    text-decoration: underline;
+}
+
