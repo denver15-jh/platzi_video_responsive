@@ -32,16 +32,81 @@ body{
     font-family: var(--font-general);
 }
 
-/* 1.- HEADER - PUBLICO */
+/* 1.- HEADER - PUBLICO -PRIVADO */
 
-.header-publico{
+.header-publico, .header-privado{
     background: var(--color-water-green);
     padding: 2rem;
 }
 
+/* Menu privado */
+
+.header-privado{
+    background: var(--color-purple);
+    padding: 2rem;
+}
+
+.header-privado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* perfil */
+
+.header-privado__container-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-privado__imagen-perfil{
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.header-privado__texto-perfil{
+    font-size: 1.6rem;
+    color: var(--white-standar);
+}
+
+/* menu */
+
+.header-privado__container-menu{
+    display: none;
+}
+
+.header-privado__container-perfil-menu:hover .header-privado__container-menu, .header-privado__container-menu:hover {
+	display: block;
+}
+
+.header-privado__container_ul-menu{
+    list-style: none;
+    margin: 0 0 0 -1.4rem;
+    padding: 0;
+    position: absolute;
+    width: 10rem;
+    text-align: right;
+}
+
+.header-privado__container-li-menu-cuenta, .header-privado__container-li-cerrar-sesion{
+    margin: 1rem 0;
+}
+
+.header-privado__link-cuenta, .header-privado__link-cerrar-sesion{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+} 
+
+.header-privado__link-cuenta:hover, .header-privado__link-cerrar-sesion:hover{
+    text-decoration: underline;
+}
+
 /* Logo */ 
 
-.header-publico__container-logo{
+.header-publico__container-logo, .header-privado__container-logo{
     display: flex;
     align-items: center;
 }

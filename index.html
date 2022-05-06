@@ -18,6 +18,112 @@
     </style>
 </head>
 <body>
-    
+    <!-- 1.- HEADER - LOGO - MENU -->
+    <header class="header-privado">
+        <!-- LOGO -->
+        <a class="header-privado__redirect-principal-page" href="login.html">
+            <figure class="header-privado__container-logo">
+                <img class="header-privado__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video" width="200">
+            </figure>  
+        </a>
+        <!-- PERFIL - MENU -->
+        <section class="header-privado__container-perfil-menu">
+            <!-- SECCION UNO - PERFIL -->
+            <section class="header-privado__container-perfil">
+                <figure class="header-privado__container-imagen-perfil">
+                    <img class="header-privado__imagen-perfil" src="assets/img/user-icon.png" alt="">
+                </figure>
+                <p class="header-privado__texto-perfil">Perfil</p>
+            </section>
+            <!-- MENU -->
+            <nav class="header-privado__container-menu">
+                <ul class="header-privado__container_ul-menu">
+                    <li class="header-privado__container-li-menu-cuenta">
+                        <a class="header-privado__link-cuenta" href="#">Cuenta</a>
+                    </li>
+                    <li class="header-privado__container-li-cerrar-sesion">
+                        <a class="header-privado__link-cerrar-sesion" href="login.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- MAIN - SEARCH - LISTA DE MUSICA -->
+    <main class="main-container-principal" style="background-color: #AB88FF;">
+        <!-- SEARCH - LISTA DE MUSICA -->
+        <section class="container-search-music">
+            <!-- SEARCH - TITULO - INPUT -->
+            <section class="container-search-music__container-titulo-search">
+                <!-- TITULO -->
+                <section class="container-search-music__container-titulo-search">
+                    <h1 class="container-search-music__titulo-search">¿Qué quieres ver hoy?</h1>
+                </section>
+                <!-- INPUT -->
+                <section class="container-search-music__container-search">
+                    <form class="container-search-music__formulario-search" action="">
+                        <div class="container-search-music__container-input-search">
+                            <input class="container-search-music__input-search" type="text" placeholder="search">
+                        </div>
+                    </form>
+                </section>
+            </section>
+            <!-- LISTA DE MUSICA - TITULO - MUSIC -->
+            <section class="container-search-music__container-music">
+                <!-- TITULO -->
+                <section class="container-search-music_container-titulo-music">
+                    <h2 class="container-search-music__titulo-music">Mi lista</h2>
+                </section>
+                <!-- LISTA DE MUSICA -->
+                <section class="container-search-music__container-lista-music">
+                    <!-- MUSIC - IMAGEN - ICONS - DESCRIPCION -->
+                    <article class="container-search-music__container-music">
+                        <!-- IMAGEN -->
+                        <section class="container-search-music__container-principal-imagen-music">
+                            <figure class="container-search-music__container-imagen-music">
+                                <img class="container-search-music__imagen-music" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" height="200" width="250">
+                            </figure>
+                        </section>
+                        <!-- ICONS - DESCRIPCION -->
+                        <section class="container-search-music__container-icons-descripcion">
+                            <!-- ICONS -->
+                            <section class="container-search-music__container-icons">
+                                <!-- PLAY -->
+                                <figure class="container-search-music__container-icon-play">
+                                    <img class="container-search-music__icon-play" src="assets/img/play-icon.png" alt="">
+                                </figure>
+                                <!-- ADD -->
+                                <figure class="container-search-music__container-icon-add">
+                                    <img class="container-search-music__icon-add" src="assets/img/plus-icon.png" alt="">
+                                </figure>
+                            </section>
+                            <!-- DESCRIPCION - TITULO - DETALLES-->
+                            <section class="container-search-music__container-principal-descripcion">
+                                <!-- TITULO - DETALLES-->
+                                <section class="container-search-music__container-descripcion">
+                                    <p class="container-search-music__titulo-descripcion">Título descriptivo</p>
+                                    <p class="container-search-music__detalle-descripcion">2019 16+ 114 minutos</p>
+                                </section>
+                            </section>
+                        </section>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </main>
+    <!-- 3.- FOOTER - LINKS -->
+    <footer class="footer">
+        <!-- LINKS -->
+        <ul class="footer__container-ul-links">
+            <li class="footer__container-li-link-terminos">
+                <a class="footer__link-terminos" href="#">Términos de uso</a>
+            </li>
+            <li class="footer__container-li-link-privacidad">
+                <a class="footer__link-privacidad" href="#">Declaración de privacidad</a>
+            </li>
+            <li class="footer__container-li-llink-ayuda">
+                <a class="footer__link-ayuda" href="#">Centro de ayuda</a>
+            </li>
+        </ul>
+    </footer>   
 </body>
 </html>
