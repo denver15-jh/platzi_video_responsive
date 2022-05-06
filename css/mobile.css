@@ -13,13 +13,21 @@
 
     /* recuerdame y olvido contraseña */
 
-    .container-formulario-imagen__container-recuerdame-forgot-password{
+    .container-formulario-imagen__container-recuerdame-forgot-password, .container-formulario-imagen__container-logueate-login{
         justify-content: space-between;
         flex-direction: row;
     }
 
-    .container-formulario-imagen__container-recuerdame{
+    .container-formulario-imagen__container-recuerdame, .container-formulario-imagen__texto-logueate{
         margin-bottom: 0;
+    }
+
+    .container-formulario-imagen__arrow-right{
+        display: block;
+    }
+    
+    .container-formulario-imagen__arrow-down{
+        display: none;
     }
 
 }

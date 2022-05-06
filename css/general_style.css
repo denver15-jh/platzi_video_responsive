@@ -100,7 +100,7 @@ body{
 
 /* inputs */ 
 
-.container-formulario-imagen__input-email, .container-formulario-imagen__input-psssword{
+.container-formulario-imagen__input-email, .container-formulario-imagen__input-passsword, .container-formulario-imagen__input-repite-passsword{
     background-color: var(--color-transparent);
     border-left: 0;
     border-top: 0;
@@ -114,7 +114,7 @@ body{
     color: var(--white-standar);
 }
 
-.container-formulario-imagen__input-email::placeholder, .container-formulario-imagen__input-psssword::placeholder{
+.container-formulario-imagen__input-email::placeholder, .container-formulario-imagen__input-passsword::placeholder, .container-formulario-imagen__input-repite-passsword::placeholder{
     color: var(--white-standar);
 }
 
@@ -131,11 +131,12 @@ body{
     height: 5rem;
     letter-spacing: 0.1rem;
     margin: 1rem 0;
+    padding: 0 2rem;
 }
 
-/* recuerdame y olvido contraseña */
+/* recuerdame y olvido contraseña - logueate */
 
-.container-formulario-imagen__container-recuerdame-forgot-password{
+.container-formulario-imagen__container-recuerdame-forgot-password, .container-formulario-imagen__container-logueate-login{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,26 +144,40 @@ body{
     flex-wrap: wrap;
 }
 
-.container-formulario-imagen__container-recuerdame{
+.container-formulario-imagen__container-recuerdame, .container-formulario-imagen__texto-logueate{
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--white-standar);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .container-formulario-imagen__input-recuerdame{
     margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
-.container-formulario-imagen__forgot-password{
+.container-formulario-imagen__arrow-right{
+    display: none;
+    margin-left: 0.5rem;
+}
+
+.container-formulario-imagen__arrow-down{
+    display: block;
+    margin-left: 0.5rem;
+}
+
+.container-formulario-imagen__forgot-password, .container-formulario-imagen__link-login{
     color: var(--white-standar);
-    font-size: 1.5rem; 
+    font-size: 1.6rem; 
     text-decoration: none;
+    padding: 0.5rem;
 }
 
-.container-formulario-imagen__forgot-password:hover{
+.container-formulario-imagen__forgot-password:hover, .container-formulario-imagen__link-login:hover{
     text-decoration: underline;
 }
 
@@ -265,6 +280,8 @@ body{
     cursor: pointer;
     white-space: nowrap;
     color: var(--black-strong);
+    font-size: 1.6rem;
+    color: var(--white-standar);
 }
 .footer__link-terminos:hover, .footer__link-privacidad:hover, .footer__link-ayuda:hover{
     text-decoration: underline;

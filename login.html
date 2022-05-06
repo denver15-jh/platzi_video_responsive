@@ -21,9 +21,11 @@
     <!-- 1.- HEADER - LOGO -->
     <header class="header-publico">
         <!-- LOGO -->
-        <figure class="header-publico__container-logo">
-            <img class="header-publico__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video" width="200">
-        </figure>  
+        <a class="header-publico__redirect-principal-page" href="login.html">
+            <figure class="header-publico__container-logo">
+                <img class="header-publico__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video" width="200">
+            </figure>  
+        </a>
     </header>
     <!-- 2.- MAIN - FORMULARIO - IMAGEN -->
     <main class="main-container-principal">
@@ -37,10 +39,10 @@
                 </section>
                 <!-- FORMULARIO -->
                 <section class="container-formulario-imagen__container-formulario-login">
-                    <form class="container-formulario-imagen__formulario-login" action="#">
+                    <form class="container-formulario-imagen__formulario-login" action="index.html">
                         <!-- INPUTS -->
-                        <input class="container-formulario-imagen__input-email" type="email" placeholder="Correo Electronico" required>
-                        <input class="container-formulario-imagen__input-psssword" type="password" placeholder="Contraseña" required>
+                        <input class="container-formulario-imagen__input-email" type="email" placeholder="Correo Electrónico" required>
+                        <input class="container-formulario-imagen__input-passsword" type="password" placeholder="Contraseña" required>
                         <!-- BOTON -->
                         <button class="container-formulario-imagen__boton"> Iniciar sesión </button>
                         <!-- RECUERDAME - OLVIDE CONTRASEÑA -->
@@ -49,21 +51,21 @@
                                 <input class="container-formulario-imagen__input-recuerdame" type="checkbox" name="recuerdame" id="recuerdame"> 
                                 Recuérdame
                             </label>
-                            <a class="container-formulario-imagen__forgot-password" href="#"> Olvidé mi contraseña </a>
+                            <a class="container-formulario-imagen__forgot-password" href="forgot_password.html"> Olvidé mi contraseña </a>
                         </div>
                     </form>
                 </section>
                 <!-- SOCIAL -->
                 <section class="container-formulario-imagen__container-google-twitter">
                     <!-- GOOGLE -->
-                    <a class="container-formulario-imagen__redirect-google" href="#">
+                    <a class="container-formulario-imagen__redirect-google" href="https://accounts.google.com/signin/v2/identifier?hl=Es&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
                         <div class="container-formulario-imagen__container-google">
                             <img class="container-formulario-imagen__imagen-google" src="assets/img/google-icon.png" alt="Google" title="Google" height="32" width="32">
                             <p class="container-formulario-imagen__titulo-google"> Inicia sesión con Google </p>
                         </div>
                     </a>
                     <!-- TWITTER -->
-                    <a class="container-formulario-imagen__redirect-twitter" href="#">
+                    <a class="container-formulario-imagen__redirect-twitter" href="https://twitter.com/">
                         <div class="container-formulario-imagen__container-twitter">
                             <img class="container-formulario-imagen__imagen-twitter" src="assets/img/twitter-icon.png" alt="Twitter" title="Google" height="32" width="32">
                             <p class="container-formulario-imagen__titulo-twitter"> Inicia sesión con Twitter </p>
@@ -73,7 +75,7 @@
                 <!-- REGISTRO -->
                 <section class="container-formulario-imagen__container-link-registate">
                     <p class="container-formulario-imagen__texto-link-registrate"> No tienes ninguna cuenta 
-                        <a class="container-formulario-imagen__link-registarte" href="#">Regístrate</a>
+                        <a class="container-formulario-imagen__link-registarte" href="register.html">Regístrate</a>
                     </p>
                 </section>
             </section>
