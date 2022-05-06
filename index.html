@@ -12,101 +12,78 @@
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/desktop.css">
-    <title>Index</title>
+    <title>Login</title>
     <style>
 
     </style>
 </head>
 <body>
-    <!-- 1.- HEADER - LOGO - MENU -->
-    <header class="header-privado">
+    <!-- 1.- HEADER - LOGO -->
+    <header class="header-publico">
         <!-- LOGO -->
-        <a class="header-privado__redirect-principal-page" href="login.html">
-            <figure class="header-privado__container-logo">
-                <img class="header-privado__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video" width="200">
+        <a class="header-publico__redirect-principal-page" href="login.html">
+            <figure class="header-publico__container-logo">
+                <img class="header-publico__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video" width="200">
             </figure>  
         </a>
-        <!-- PERFIL - MENU -->
-        <section class="header-privado__container-perfil-menu">
-            <!-- SECCION UNO - PERFIL -->
-            <section class="header-privado__container-perfil">
-                <figure class="header-privado__container-imagen-perfil">
-                    <img class="header-privado__imagen-perfil" src="assets/img/user-icon.png" alt="">
-                </figure>
-                <p class="header-privado__texto-perfil">Perfil</p>
-            </section>
-            <!-- MENU -->
-            <nav class="header-privado__container-menu">
-                <ul class="header-privado__container_ul-menu">
-                    <li class="header-privado__container-li-menu-cuenta">
-                        <a class="header-privado__link-cuenta" href="#">Cuenta</a>
-                    </li>
-                    <li class="header-privado__container-li-cerrar-sesion">
-                        <a class="header-privado__link-cerrar-sesion" href="login.html">Cerrar sesión</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
     </header>
-    <!-- MAIN - SEARCH - LISTA DE MUSICA -->
-    <main class="main-container-principal" style="background-color: #AB88FF;">
-        <!-- SEARCH - LISTA DE MUSICA -->
-        <section class="container-search-music">
-            <!-- SEARCH - TITULO - INPUT -->
-            <section class="container-search-music__container-titulo-search">
+    <!-- 2.- MAIN - FORMULARIO - IMAGEN -->
+    <main class="main-container-principal">
+        <!-- FORMULARIO -->
+        <section class="container-formulario-imagen">
+            <!-- SECCION UNO - TITULO - FORMULARIO - SOCIAL - REGISTRO -->
+            <section class="container-formulario-imagen__formulario">
                 <!-- TITULO -->
-                <section class="container-search-music__container-titulo-search">
-                    <h1 class="container-search-music__titulo-search">¿Qué quieres ver hoy?</h1>
+                <section class="container-formulario-imagen__container-titulo-login">
+                    <h2 class="container-formulario-imagen__titulo-login">Inicia sesión</h2>
                 </section>
-                <!-- INPUT -->
-                <section class="container-search-music__container-search">
-                    <form class="container-search-music__formulario-search" action="">
-                        <div class="container-search-music__container-input-search">
-                            <input class="container-search-music__input-search" type="text" placeholder="search">
+                <!-- FORMULARIO -->
+                <section class="container-formulario-imagen__container-formulario-login">
+                    <form class="container-formulario-imagen__formulario-login" action="list_music.html">
+                        <!-- INPUTS -->
+                        <input class="container-formulario-imagen__input-email" type="email" placeholder="Correo Electrónico" required>
+                        <input class="container-formulario-imagen__input-passsword" type="password" placeholder="Contraseña" required>
+                        <!-- BOTON -->
+                        <button class="container-formulario-imagen__boton"> Iniciar sesión </button>
+                        <!-- RECUERDAME - OLVIDE CONTRASEÑA -->
+                        <div class="container-formulario-imagen__container-recuerdame-forgot-password">
+                            <label class="container-formulario-imagen__container-recuerdame"  for="recuerdame">
+                                <input class="container-formulario-imagen__input-recuerdame" type="checkbox" name="recuerdame" id="recuerdame"> 
+                                Recuérdame
+                            </label>
+                            <a class="container-formulario-imagen__forgot-password" href="forgot_password.html"> Olvidé mi contraseña </a>
                         </div>
                     </form>
                 </section>
+                <!-- SOCIAL -->
+                <section class="container-formulario-imagen__container-google-twitter">
+                    <!-- GOOGLE -->
+                    <a class="container-formulario-imagen__redirect-google" href="https://accounts.google.com/signin/v2/identifier?hl=Es&flowName=GlifWebSignIn&flowEntry=ServiceLogin">
+                        <div class="container-formulario-imagen__container-google">
+                            <img class="container-formulario-imagen__imagen-google" src="assets/img/google-icon.png" alt="Google" title="Google" height="32" width="32">
+                            <p class="container-formulario-imagen__titulo-google"> Inicia sesión con Google </p>
+                        </div>
+                    </a>
+                    <!-- TWITTER -->
+                    <a class="container-formulario-imagen__redirect-twitter" href="https://twitter.com/">
+                        <div class="container-formulario-imagen__container-twitter">
+                            <img class="container-formulario-imagen__imagen-twitter" src="assets/img/twitter-icon.png" alt="Twitter" title="Google" height="32" width="32">
+                            <p class="container-formulario-imagen__titulo-twitter"> Inicia sesión con Twitter </p>
+                        </div>
+                    </a>
+                </section>
+                <!-- REGISTRO -->
+                <section class="container-formulario-imagen__container-link-registate">
+                    <p class="container-formulario-imagen__texto-link-registrate"> No tienes ninguna cuenta 
+                        <a class="container-formulario-imagen__link-registarte" href="register.html">Regístrate</a>
+                    </p>
+                </section>
             </section>
-            <!-- LISTA DE MUSICA - TITULO - MUSIC -->
-            <section class="container-search-music__container-music">
-                <!-- TITULO -->
-                <section class="container-search-music_container-titulo-music">
-                    <h2 class="container-search-music__titulo-music">Mi lista</h2>
-                </section>
-                <!-- LISTA DE MUSICA -->
-                <section class="container-search-music__container-lista-music">
-                    <!-- MUSIC - IMAGEN - ICONS - DESCRIPCION -->
-                    <article class="container-search-music__container-music">
-                        <!-- IMAGEN -->
-                        <section class="container-search-music__container-principal-imagen-music">
-                            <figure class="container-search-music__container-imagen-music">
-                                <img class="container-search-music__imagen-music" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" height="200" width="250">
-                            </figure>
-                        </section>
-                        <!-- ICONS - DESCRIPCION -->
-                        <section class="container-search-music__container-icons-descripcion">
-                            <!-- ICONS -->
-                            <section class="container-search-music__container-icons">
-                                <!-- PLAY -->
-                                <figure class="container-search-music__container-icon-play">
-                                    <img class="container-search-music__icon-play" src="assets/img/play-icon.png" alt="">
-                                </figure>
-                                <!-- ADD -->
-                                <figure class="container-search-music__container-icon-add">
-                                    <img class="container-search-music__icon-add" src="assets/img/plus-icon.png" alt="">
-                                </figure>
-                            </section>
-                            <!-- DESCRIPCION - TITULO - DETALLES-->
-                            <section class="container-search-music__container-principal-descripcion">
-                                <!-- TITULO - DETALLES-->
-                                <section class="container-search-music__container-descripcion">
-                                    <p class="container-search-music__titulo-descripcion">Título descriptivo</p>
-                                    <p class="container-search-music__detalle-descripcion">2019 16+ 114 minutos</p>
-                                </section>
-                            </section>
-                        </section>
-                    </article>
-                </section>
+            <!-- SECCION DOS - IMAGEN -->
+            <section class="container-formulario-imagen__imagen">
+                <figure class="container-formulario-imagen__container-imagen-login">
+                    <img class="container-formulario-imagen__imagen-login" src="assets/img/imagen-login.png" alt="Imágen principal login" title="Imágen principal login">
+                </figure>
             </section>
         </section>
     </main>
@@ -124,6 +101,6 @@
                 <a class="footer__link-ayuda" href="#">Centro de ayuda</a>
             </li>
         </ul>
-    </footer>   
+    </footer>
 </body>
 </html>
