@@ -19,6 +19,8 @@
         flex-direction: row;
     }
 
+    /* 2.- FORMULARIO - IMAGEN */
+
     /* formulario */
 
     .container-formulario-imagen__formulario{
@@ -47,6 +49,8 @@
 }
 
 @media(min-width: 575px){
+
+    /* 2.- FORMULARIO - IMAGEN */
 
     /* formulario */
 
