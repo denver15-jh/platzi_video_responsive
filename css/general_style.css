@@ -6,6 +6,7 @@
     /* COLORES */
 
     --color-purple: #AB88FF;
+    --color-purple-strong: #8f57fd;
     --color-water-green: #21c08b;
     --color-gradient-water-green-purple: linear-gradient(#21C08B, #AB88FF);
     --white-standar: white;
@@ -34,7 +35,7 @@ body{
 
 /* 1.- HEADER - PUBLICO -PRIVADO */
 
-.header-publico, .header-privado{
+.header-publico{
     background: var(--color-water-green);
     padding: 2rem;
 }
@@ -42,14 +43,12 @@ body{
 /* Menu privado */
 
 .header-privado{
-    background: var(--color-purple);
+    background: var(--color-purple-strong);
     padding: 2rem;
-}
-
-.header-privado{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* perfil */
@@ -118,6 +117,11 @@ body{
 }
 
 /* formulario - imagen */
+
+.container-search-music{
+    background-color: var(--color-purple-strong);
+    height: 100%;
+}
 
 .container-formulario-imagen{
     display: flex;
@@ -321,6 +325,10 @@ body{
     background-color: var(--color-purple);
 }
 
+.footer--strong-purple{
+    background-color: var(--color-purple-strong);
+}
+
 /* ul links */
 
 .footer__container-ul-links{
@@ -352,3 +360,161 @@ body{
     text-decoration: underline;
 }
 
+/* 4.- LISTA DE MUSICA */ 
+
+.container-search-music__container-principal-titulo-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* titulo search  */ 
+
+.container-search-music__container-titulo-search{
+    margin: 5rem 2rem 2rem 2rem;
+}
+
+.container-search-music__titulo-search{
+    font-size: 2.5rem;
+    color: var(--white-standar);
+   text-align: center;
+}
+
+/* search */ 
+
+.container-search-music__container-search, .container-search-music__formulario-search{
+    width: 100%;
+}
+
+.container-search-music__container-input-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-search-music__input-search{
+    background-color: var(--black-opacity-uno);
+    border: 0.2rem solid var(--white-standar);
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 1.6rem;
+    height: 5rem;
+    outline: none;
+    padding: 0 2rem;
+    width: 70%;
+}
+
+.container-search-music__input-search::placeholder{
+    color: white;
+}
+
+/* seccion titulo */
+
+.container-search-music_container-titulo-music{
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* titulo carousel */
+.container-search-music__titulo-music{
+    color: var(--white-standar);
+    font-size: 2rem;
+}
+
+/* seccion carousel */
+
+.container-search-music__container-lista-music{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 8rem 0;
+    padding-left: 2rem;
+}
+
+/* caja music */
+
+.container-search-music__container-music{
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    min-width: 20rem;
+    height: 25rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+    cursor: default;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+/* imagen caja */
+
+.container-search-music__imagen-music{
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+}
+
+/* hover cajas */
+
+.container-search-music__container-music:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+/* descipcion caja */
+
+.container-search-music__container-icons-descripcion{
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    bottom: 0;
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 0;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container-search-music__container-music:hover ~ .container-search-music__container-music{
+    transform: translate3d(10rem, 0, 0);
+}
+
+.container-search-music__container-music:hover .container-search-music__container-icons-descripcion {
+    opacity: 1;
+}
+
+/* caja - descripcion - iconos */
+
+.container-search-music__container-icons{
+    display: flex;
+}
+
+.container-search-music__icon-play, .container-search-music__icon-add{
+    width: 2rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+/* descripcion */
+
+.container-search-music__titulo-descripcion{
+    color: white;
+    margin: 0.5rem 0 0 0;
+    cursor: text;
+}
+
+.container-search-music__detalle-descripcion{
+    color: white;
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    cursor: text;
+}
