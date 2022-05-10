@@ -38,6 +38,9 @@ body{
 .header-publico{
     background: var(--color-water-green);
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Menu privado */

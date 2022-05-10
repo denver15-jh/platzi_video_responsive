@@ -6,6 +6,12 @@
 
     /* 1.- HEADER - PUBLICO -PRIVADO */
 
+    /* Menu publico */
+
+    .header-publico{
+        justify-content: start;
+    }
+
     /* Menu privado */
 
     .header-privado{
