@@ -226,6 +226,10 @@ body{
     text-align: center;
 }
 
+.container-formulario-imagen__container-recuerdame, .container-formulario-imagen__input-recuerdame{
+    cursor: pointer;
+}
+
 .container-formulario-imagen__input-recuerdame{
     margin-right: 0.5rem;
     width: 1.5rem;
