@@ -31,6 +31,12 @@
 
     /* 5.- PERFIL */ 
 
+    /* titulo pefil */
+
+    .container-avatar-formulario__titulo{
+        font-size: 3rem;
+    }
+
     /* formulario perfil */
 
     .container-avatar-formulario__container-formulario-perfil{

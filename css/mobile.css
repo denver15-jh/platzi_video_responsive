@@ -48,6 +48,12 @@
 
     /* 5.- PERFIL */ 
 
+    /* titulo pefil */
+
+    .container-avatar-formulario__titulo{
+        font-size: 2.5rem;
+    }
+
     /* formulario perfil */
 
     .container-avatar-formulario__container-formulario-perfil{
