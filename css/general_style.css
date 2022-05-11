@@ -113,18 +113,15 @@ body{
     align-items: center;
 }
 
-/* 2.- MAIN  */
+/* MAIN  */
 
 .main-container-principal{
     flex: 1 0 auto;
 }
 
-/* formulario - imagen */
+/* 2.- FORMULARIO LOGIN - REGISTER - FORGOT PASSWORD*/
 
-.container-search-music{
-    background-color: var(--color-purple-strong);
-    height: 100%;
-}
+/* formulario - imagen */
 
 .container-formulario-imagen{
     display: flex;
@@ -172,7 +169,7 @@ body{
 
 /* inputs */ 
 
-.container-formulario-imagen__input-email, .container-formulario-imagen__input-passsword, .container-formulario-imagen__input-repite-passsword{
+.container-formulario-imagen__input-email, .container-formulario-imagen__input-passsword, .container-formulario-imagen__input-repite-passsword, .container-avatar-formulario__input-nombre, .container-avatar-formulario__input-apellido, .container-avatar-formulario__input-email, .container-avatar-formulario__input-telefono{
     background-color: var(--color-transparent);
     border-left: 0;
     border-top: 0;
@@ -186,13 +183,13 @@ body{
     color: var(--white-standar);
 }
 
-.container-formulario-imagen__input-email::placeholder, .container-formulario-imagen__input-passsword::placeholder, .container-formulario-imagen__input-repite-passsword::placeholder{
+.container-formulario-imagen__input-email::placeholder, .container-formulario-imagen__input-passsword::placeholder, .container-formulario-imagen__input-repite-passsword::placeholder, .container-avatar-formulario__input-nombre::placeholder, .container-avatar-formulario__input-apellido::placeholder, .container-avatar-formulario__input-email::placeholder, .container-avatar-formulario__input-telefono::placeholder{
     color: var(--white-standar);
 }
 
 /* boton */ 
 
-.container-formulario-imagen__boton{
+.container-formulario-imagen__boton, .container-avatar-formulario__boton{
     background-color: var(--black-opacity-uno);
     border: none;
     border-radius: 2.5rem;
@@ -324,7 +321,6 @@ body{
     object-position: center; 
 }
 
-
 /* 3.- FOOTER */
 
 .footer{
@@ -368,6 +364,11 @@ body{
 }
 
 /* 4.- LISTA DE MUSICA */ 
+
+.container-search-music{
+    background-color: var(--color-purple-strong);
+    height: 100%;
+}
 
 .container-search-music__container-principal-titulo-search{
     display: flex;
@@ -524,4 +525,79 @@ body{
     font-size: 0.8rem;
     margin: 0.3rem 0;
     cursor: text;
+}
+
+/* 5.- PERFIL */ 
+
+.container-avatar-formulario{
+    background-color: var(--color-purple-strong);
+    height: 100%;
+}
+
+/* titulo pefil */
+
+.container-avatar-formulario__container-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-avatar-formulario__titulo{
+    text-align: center;
+    margin: 5rem 2rem 2rem 2rem;
+}
+
+.container-avatar-formulario__container-principal-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Avatar */
+
+.container-avatar-formulario__container-foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 14rem;
+}
+
+.container-avatar-formulario__foto-perfil{
+    border-radius: 50%;
+    border: 0.5rem solid var(--white-standar);
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container-avatar-formulario__container-acciones-avatar{
+    margin: 1rem;
+}
+
+.container-avatar-formulario__update-foto-perfil, .container-avatar-formulario__delete-foto-perfil{
+    width: 3.5rem;
+    cursor: pointer;
+}
+
+.container-avatar-formulario__update-foto-perfil{
+    margin-right: 1rem;
+}
+
+/* formulario perfil */
+
+.container-avatar-formulario__container-formulario-perfil{
+    margin: 0 2rem;
+}
+
+.container-avatar-formulario__container-principal-avatar-formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-avatar-formulario__formulario-perfil{
+    display: flex;
+    flex-direction: column;
 }

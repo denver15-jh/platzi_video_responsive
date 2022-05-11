@@ -29,4 +29,13 @@
         display: block;
     }
 
+    /* 5.- PERFIL */ 
+
+    /* formulario perfil */
+
+    .container-avatar-formulario__container-formulario-perfil{
+        width: 80rem;
+        margin: 0 auto;
+    }
+
 }

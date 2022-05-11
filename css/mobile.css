@@ -46,6 +46,14 @@
         display: none;
     }
 
+    /* 5.- PERFIL */ 
+
+    /* formulario perfil */
+
+    .container-avatar-formulario__container-formulario-perfil{
+        margin: 0 4rem;
+    }
+
 }
 
 @media(min-width: 575px){

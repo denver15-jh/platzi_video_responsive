@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de platzi video, videos">
+    <meta name="keywords" content="Platzi, video, música, ">
+    <meta name="author" content="José Hernández" />
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/logo-platzi-video.png"/>
+    <link rel="stylesheet" href="css/general_style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <title>Index</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- 1.- HEADER - LOGO - MENU -->
+    <header class="header-privado">
+        <!-- LOGO -->
+        <a class="header-privado__redirect-principal-page" href="list_music.html">
+            <figure class="header-privado__container-logo">
+                <img class="header-privado__logo" src="assets/img/logo-platzi-video.png" alt="Logo Platzi Video" title="Logo Platzi Video" width="200">
+            </figure>  
+        </a>
+        <!-- PERFIL - MENU -->
+        <section class="header-privado__container-perfil-menu">
+            <!-- SECCION UNO - PERFIL -->
+            <section class="header-privado__container-perfil">
+                <figure class="header-privado__container-imagen-perfil">
+                    <img class="header-privado__imagen-perfil" src="assets/img/user-icon.png" alt="">
+                </figure>
+                <p class="header-privado__texto-perfil">Perfil</p>
+            </section>
+            <!-- MENU -->
+            <nav class="header-privado__container-menu">
+                <ul class="header-privado__container_ul-menu">
+                    <li class="header-privado__container-li-menu-cuenta">
+                        <a class="header-privado__link-cuenta" href="perfil.html">Cuenta</a>
+                    </li>
+                    <li class="header-privado__container-li-cerrar-sesion">
+                        <a class="header-privado__link-cerrar-sesion" href="index.html">Cerrar sesión</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- MAIN - SEARCH - LISTA DE MUSICA -->
+    <main class="main-container-principal">
+        <!-- SEARCH - LISTA DE MUSICA -->
+        <section class="container-avatar-formulario">
+
+            <!-- TITULO -->
+            <section class="container-avatar-formulario__container-titulo">
+                <h1 class="container-avatar-formulario__titulo">Información personal.</h1>
+            </section>
+
+            <!-- AVATAR - FORMULARIO -->
+            <section class="container-avatar-formulario__container-principal-avatar-formulario">
+                
+                <!-- AVATAR - UPDATE IMAGEN -->
+                <section class="container-avatar-formulario__container-principal-avatar">
+                    <section class="container-avatar-formulario__container-avatar">
+                        <figure class="container-avatar-formulario__container-foto-perfil">
+                            <img class="container-avatar-formulario__foto-perfil" src="assets/img/imagen-login.png" alt="Avatar" title="Avatar">
+                        </figure>
+                    </section>
+                    <section>
+                        <section class="container-avatar-formulario__container-acciones-avatar">
+                            <img class="container-avatar-formulario__update-foto-perfil" src="assets/img/play-icon.png" alt="Avatar" title="Avatar">
+                            <img class="container-avatar-formulario__delete-foto-perfil" src="assets/img/plus-icon.png" alt="Avatar" title="Avatar">
+                        </section>
+                    </section>
+                </section>
+
+                <!-- FORMULARIO -->
+                <section class="container-avatar-formulario__container-formulario-perfil">
+                    <form class="container-avatar-formulario__formulario-perfil" action="list_music.html">
+                        <!-- INPUTS -->
+                        <input class="container-avatar-formulario__input-nombre" type="text" placeholder="Nombre" required>
+                        <input class="container-avatar-formulario__input-apellido" type="text" placeholder="Apellido" required>
+                        <input class="container-avatar-formulario__input-email" type="email" placeholder="Correo Electrónico" required>
+                        <input class="container-avatar-formulario__input-telefono" type="tel" placeholder="Teléfono" required>
+                        <!-- BOTON -->
+                        <button class="container-avatar-formulario__boton"> Guardar </button>
+                    </form>
+                </section>
+
+            </section>
+
+        </section>
+    </main>
+    <!-- 3.- FOOTER - LINKS -->
+    <footer class="footer footer--strong-purple">
+        <!-- LINKS -->
+        <ul class="footer__container-ul-links">
+            <li class="footer__container-li-link-terminos">
+                <a class="footer__link-terminos" href="#">Términos de uso</a>
+            </li>
+            <li class="footer__container-li-link-privacidad">
+                <a class="footer__link-privacidad" href="#">Declaración de privacidad</a>
+            </li>
+            <li class="footer__container-li-llink-ayuda">
+                <a class="footer__link-ayuda" href="#">Centro de ayuda</a>
+            </li>
+        </ul>
+    </footer>   
+</body>
+</html>
